@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include <conio.h>
 
 #include "ModulesOzhekhovskyi.h"
 
@@ -52,6 +53,6 @@ int main(){
     showDecimalHexNums(x, y, z);
 
     cout << endl << "Результат виразу: " << s_calculation(x, y, z);
-
+    getch();
     return 0;
 }
