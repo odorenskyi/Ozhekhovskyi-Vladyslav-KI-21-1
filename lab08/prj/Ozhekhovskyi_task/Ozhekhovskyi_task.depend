@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1645469624 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab08\prj\ozhekhovskyi_task\main.cpp
+	<iostream>
+	<windows.h>
+	"ModulesOzhekhovskyi.h"
+
