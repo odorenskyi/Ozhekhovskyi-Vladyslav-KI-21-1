@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 #include "ModulesOzhekhovskyi.h"
 
@@ -6,8 +7,6 @@ using namespace std;
 
 int main()
 {
-    system("chcp 65001 & cls");
-
     double valueX[5] = { 5, 4.5, 7.8, 0.5, 11 };
     double valueY[5] = { 3, 6.3, 2, -4.3, -3 };
     double valueZ[5] = { 9, 1.2, 3.6, 15, 2.6 };
@@ -34,5 +33,7 @@ int main()
         cout << "Test result: " << testResult << endl << endl;
         testResult = "False";
     }
+    getch();
 
+    return 0;
 }
