@@ -26,8 +26,7 @@ void showDecimalHexNums(int x, int y, int z){
 }
 
 int main(){
-    //SetConsoleOutputCP(1251);
-        system("chcp 1251");
+    system("chcp 1251 & cls");
 
     int x = 0;
     int y = 0;
