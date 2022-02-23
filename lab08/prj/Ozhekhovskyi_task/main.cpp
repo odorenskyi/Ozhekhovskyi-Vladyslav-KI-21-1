@@ -1,13 +1,14 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <clocale>
 
 #include "ModulesOzhekhovskyi.h"
 
 using namespace std;
 
 string authorCopyright(){
-    return "© Ожеховський Владислав";
+    return "В© РћР¶РµС…РѕРІСЃСЊРєРёР№ Р’Р»Р°РґРёСЃР»Р°РІ";
 }
 
 bool logicalExpression(double a, double b){
@@ -15,17 +16,17 @@ bool logicalExpression(double a, double b){
 }
 
 void showDecimalHexNums(int x, int y, int z){
-    cout << endl << "x в десятковій: " << dec << x << endl;
-    cout << "y в десятковій: " << dec << y << endl;
-    cout << "z в десятковій: " << dec << z << endl << endl;
+    cout << endl << "x РІ РґРµСЃСЏС‚РєРѕРІС–Р№: " << dec << x << endl;
+    cout << "y РІ РґРµСЃСЏС‚РєРѕРІС–Р№: " << dec << y << endl;
+    cout << "z РІ РґРµСЃСЏС‚РєРѕРІС–Р№: " << dec << z << endl << endl;
 
-    cout << "x в шістнадцятковій: " << hex << x << endl;
-    cout << "y в шістнадцятковій: " << hex << y << endl;
-    cout << "z в шістнадцятковій: " << hex << z << endl;
+    cout << "x РІ С€С–СЃС‚РЅР°РґС†СЏС‚РєРѕРІС–Р№: " << hex << x << endl;
+    cout << "y РІ С€С–СЃС‚РЅР°РґС†СЏС‚РєРѕРІС–Р№: " << hex << y << endl;
+    cout << "z РІ С€С–СЃС‚РЅР°РґС†СЏС‚РєРѕРІС–Р№: " << hex << z << endl;
 }
 
 int main(){
-    system("chcp 1251 & cls");
+    system("chcp 65001 & cls");
 
     int x = 0;
     int y = 0;
@@ -35,24 +36,24 @@ int main(){
 
     cout << authorCopyright() << endl;
 
-    cout << "Введіть число a: ";
+    cout << "Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ a: ";
     cin >> a;
-    cout << "Введіть число b: ";
+    cout << "Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ b: ";
     cin >> b;
 
-    cout << "Результат логічного виразу (a + 1) < (b + 3): "
+    cout << "Р РµР·СѓР»СЊС‚Р°С‚ Р»РѕРіС–С‡РЅРѕРіРѕ РІРёСЂР°Р·Сѓ (a + 1) < (b + 3): "
          << logicalExpression(a, b) << endl << endl;
 
-    cout << "Введіть число x: ";
+    cout << "Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ x: ";
     cin >> x;
-    cout << "Введіть число y: ";
+    cout << "Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ y: ";
     cin >> y;
-    cout << "Введіть число z: ";
+    cout << "Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ z: ";
     cin >> z;
 
     showDecimalHexNums(x, y, z);
 
-    cout << endl << "Результат виразу: " << s_calculation(x, y, z);
+    cout << endl << "Р РµР·СѓР»СЊС‚Р°С‚ РІРёСЂР°Р·Сѓ: " << s_calculation(x, y, z);
     getch();
     return 0;
 }
