@@ -12,7 +12,7 @@ int main()
     double valueZ[5] = { 9, 1.2, 3.6, 15, 2.6 };
 
     double expectedResult[5] = { 728.478, 29771.927, 97.164, -4410.137, -730.013 };
-    string testResult = "False";
+    string testResult = "Failed";
     double result = 0;
 
     for (int i = 0; i < 5; i++) {
@@ -21,7 +21,7 @@ int main()
         result = floor( s_calculation(valueX[i], valueY[i], valueZ[i]) * 1000) / 1000;
 
         if (result == expectedResult[i]) {
-            testResult = "True";
+            testResult = "Passed";
         }
 
         cout << "Test case #" << i + 1 << ": " << endl;
@@ -31,7 +31,7 @@ int main()
         cout << "Expected result: " << expectedResult[i] << endl;
         cout << "The result obtained: " << result << endl;
         cout << "Test result: " << testResult << endl << endl;
-        testResult = "False";
+        testResult = "Failed";
     }
     getch();
 
