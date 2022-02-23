@@ -1,7 +1,6 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
-#include <locale.h>
 
 #include "ModulesOzhekhovskyi.h"
 
@@ -26,8 +25,8 @@ void showDecimalHexNums(int x, int y, int z){
 }
 
 int main(){
-    system("chcp 1251 & cls");
-
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
     int x = 0;
     int y = 0;
     int z = 0;
