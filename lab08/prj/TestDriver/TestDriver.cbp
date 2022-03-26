@@ -31,7 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="../../../lab09/prj" />
 		</Compiler>
+		<Linker>
+			<Add library="../../../lab09/prj/ModulesOzhekhovskyi/bin/Debug/libModulesOzhekhovskyi.a" />
+			<Add directory="C:/Users/vlado/Desktop/CNTU/БМТП/Ozhekhovskyi-Vladyslav-KI-21-1/lab09/prj" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
