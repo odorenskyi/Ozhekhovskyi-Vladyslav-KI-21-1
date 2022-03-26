@@ -9,7 +9,7 @@ double s_calculation(double x, double y, double z){
     return ( sin(x) / sqrt( fabs( (y * z) / (x + y) ) ) ) + (3 * pow(y, 5));
 }
 
-tornado tornadoCategory(int speedWind){
+tornado tornadoCategory(double speedWind){
     if(speedWind < 64 || speedWind > 512){
         return {-1, "Incorrect value entered"};
     } else if(speedWind <= 116){

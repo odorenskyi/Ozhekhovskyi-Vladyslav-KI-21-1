@@ -18,7 +18,7 @@ struct averageTemp{
 
 double s_calculation(double x, double y, double z);
 
-tornado tornadoCategory(int speedWind);
+tornado tornadoCategory(double speedWind);
 
 averageTemp averageDailyTemp(double sumTempC);
 
