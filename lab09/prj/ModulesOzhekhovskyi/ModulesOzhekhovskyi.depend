@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1648244343 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab09\prj\modulesozhekhovskyi\main.cpp
+	"ModulesOzhekhovskyi.h"
+	<bitset>
+	<iostream>
+	<sstream>
+
+1648240761 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab09\prj\modulesozhekhovskyi\modulesozhekhovskyi.h
+	<cmath>
+	<string>
+
