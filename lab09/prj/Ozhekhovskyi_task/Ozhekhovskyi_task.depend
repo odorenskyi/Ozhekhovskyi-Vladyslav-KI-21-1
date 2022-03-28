@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1648398681 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab09\prj\ozhekhovskyi_task\main.cpp
+	<iostream>
+	<conio.h>
+	"ModulesOzhekhovskyi.h"
+
+1648329605 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab09\prj\modulesozhekhovskyi\modulesozhekhovskyi.h
+	<cmath>
+	<string>
+
