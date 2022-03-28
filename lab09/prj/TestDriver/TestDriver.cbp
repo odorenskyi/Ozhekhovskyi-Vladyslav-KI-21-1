@@ -31,11 +31,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../../prj" />
+			<Add directory="../ModulesOzhekhovskyi" />
 		</Compiler>
 		<Linker>
 			<Add library="../ModulesOzhekhovskyi/bin/Debug/libModulesOzhekhovskyi.a" />
-			<Add directory="../../prj" />
+			<Add directory="../ModulesOzhekhovskyi" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
