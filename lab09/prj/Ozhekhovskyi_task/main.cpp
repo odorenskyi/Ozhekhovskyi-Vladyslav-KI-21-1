@@ -9,7 +9,7 @@ int main()
     char sym;
 
     do{
-        cout << endl << "Enter symbol: ";
+        cout << endl << "Enter one of the symbols 'z', 'r', 's', 't', 'q', 'Q': ";
         cin >> sym;
 
         switch (sym) {
