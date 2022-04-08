@@ -131,10 +131,8 @@ int numPunctuationMarksInFile(string inputFileName, string textInInputFile){
     ofstream inputTxtFile(inputFileName, ios::app);
     char punctuationMarks[10] = { ',', '.', ':', ';', '!', '?', '-', '(', ')' };
     int numPunctuationMarks = 0;
-    size_t foundMark;
 
     for (int i = 0; i < textInInputFile.length(); i++) {
-        //foundMark = textInInputFile.find(punctuationMarks[i]);
         for(int j = 0; j < 10; j++)
         if (punctuationMarks[j] == textInInputFile[i]) {
             numPunctuationMarks++;
