@@ -13,7 +13,6 @@ string inputNumData(string data, int maxNum, string msg);
 string inputYearData(string data, string msg);
 string inputAdditions(string data, string msg);
 void addElement(regEnrollment *lst);
-void deleteElement(regEnrollment *lst, regEnrollment *root);
-void deleteRoot(regEnrollment *root);
+void deleteElement(regEnrollment *root);
 
 #endif // MODULESOZHEKHOVSKYI_H_INCLUDED

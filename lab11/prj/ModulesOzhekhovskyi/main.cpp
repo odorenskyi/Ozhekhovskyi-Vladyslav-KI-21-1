@@ -6,7 +6,6 @@ string inputTextData(int numBytes, string data, string msg)
         cout << msg;
         cin >> data;
     } while (data.length() < 1  || data.length() > numBytes);
-
     return data;
 }
 
@@ -43,7 +42,7 @@ string inputYearData(string data, string msg)
         string::size_type sz;
         intNum = stoi(data, &sz);
 
-        if (intNum > 1800 && intNum < 2023) return data;
+        if (intNum >= 1800 && intNum < 2023) return data;
 
     } while(intNum < 1800 || intNum > 2022);
 }
@@ -52,6 +51,7 @@ string inputAdditions(string data, string msg)
 {
     do {
         cout << msg;
+        cin.ignore();
         getline(cin, data);
 
         if (data.length() <= 255) return data;
@@ -65,7 +65,7 @@ void addElement(regEnrollment *rootNode)
     regEnrollment *newElement = new regEnrollment;
 
     while (bufNode->ptr != nullptr) {
-        bufNode = rootNode->ptr;
+        bufNode = bufNode->ptr;
     }
 
     bufNode->ptr = newElement;
@@ -80,55 +80,41 @@ void addElement(regEnrollment *rootNode)
     string dateMonth = "0";
     string dateYear = "";
     string govNum = "";
-    string additions = "";
+    char additions[255] = "";
 
-    string buf = "";
-
-    strcpy(newElement->firstName,
-           inputTextData(35, name, "Enter your name: ").c_str());
-    strcpy(newElement->lastName,
-           inputTextData(35, lastName, "Enter your last name: ").c_str());
-    strcpy(newElement->patronymic,
-           inputTextData(35, patronymic, "Enter your patronymic: ").c_str());
-    strcpy(newElement->carBrand,
-           inputTextData(35, carBrand, "Enter your car brand: ").c_str());
-    strcpy(newElement->gradYear,
-           inputYearData(gradYear, "Enter your graduation year: ").c_str());
-    strcpy(newElement->dateDay,
-           inputNumData(dateDay, 31, "Enter the day of registration: ").c_str());
-    strcpy(newElement->dateMonth,
-           inputNumData(dateMonth, 12, "Enter the month of registration: ").c_str());
-    strcpy(newElement->dateYear,
-           inputYearData(dateYear, "Enter the year of registration: ").c_str());
-    strcpy(newElement->govNumber,
-           inputTextData(8, govNum, "Enter your state number: ").c_str());
-    strcpy(newElement->additions,
-           inputAdditions(additions, "Enter additions informations: ").c_str());
+    strcpy(newElement->firstName, inputTextData(35, name, "Enter your name: ").c_str());
+    strcpy(newElement->lastName, inputTextData(35, lastName, "Enter your last name: ").c_str());
+    strcpy(newElement->patronymic, inputTextData(35, patronymic, "Enter your patronymic: ").c_str());
+    strcpy(newElement->carBrand, inputTextData(35, carBrand, "Enter your car brand: ").c_str());
+    strcpy(newElement->gradYear, inputYearData(gradYear, "Enter your graduation year: ").c_str());
+    strcpy(newElement->dateDay, inputNumData(dateDay, 31, "Enter the day of registration: ").c_str());
+    strcpy(newElement->dateMonth, inputNumData(dateMonth, 12, "Enter the month of registration: ").c_str());
+    strcpy(newElement->dateYear, inputYearData(dateYear, "Enter the year of registration: ").c_str());
+    strcpy(newElement->govNumber, inputTextData(8, govNum, "Enter your state number: ").c_str());
+    strcpy(newElement->additions, inputAdditions(additions, "Enter additions informations: ").c_str());
 }
 
-void deleteElement(regEnrollment *lst, regEnrollment *root)
+void deleteElement(regEnrollment *root)
 {
-  regEnrollment *temp;
-  temp = root;
-  while (temp->ptr != lst) // просматриваем список начиная с корня
-  { // пока не найдем узел, предшествующий lst
-    temp = temp->ptr;
-  }
-  temp->ptr = lst->ptr; // переставляем указатель
-  delete(lst); // освобождаем память удаляемого узла
+    regEnrollment *findNode = root;
+    regEnrollment *buffer = nullptr;
+
+    char searchRequest[9] = "";
+    cout << endl << "Choose element for deleting by state number: ";
+    cin >> searchRequest;
+
+    do {
+        if (int(strcmp(searchRequest, findNode->govNumber)) == 0) {
+            if (findNode == root) {
+                root = root->ptr;
+            }
+            else {
+                buffer->ptr = findNode->ptr;
+            }
+            delete(findNode);
+            break;
+        }
+        buffer = findNode;
+        findNode = findNode->ptr;
+    } while (findNode != nullptr);
 }
-
-void deleteRoot(regEnrollment *root)
-{
-  regEnrollment *temp;
-  temp = root->ptr;
-  delete(root); // освобождение памяти текущего корня
-}
-
-
-
-
-
-
-
-
