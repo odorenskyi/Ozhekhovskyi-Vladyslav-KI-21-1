@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1651335557 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\project_1_ozhekhovskyi\main.cpp
+	<iostream>
+	"ModulesOzhekhovskyi.h"
+	"ModulesStriuk.h"
+	"ModulesBaramba.h"
+
+1651392223 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesozhekhovskyi\modulesozhekhovskyi.h
+	"struct_type_project_1.h"
+	<iostream>
+	<cstring>
+
+1651090206 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\struct_type_project_1.h
+	<string>
+
+1651334231 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesstriuk\modulesstriuk.h
+	"struct_type_project_1.h"
+	<fstream>
+	<iostream>
+	<string>
+	<cstring>
+
+1651336372 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesbaramba\modulesbaramba.h
+	<iostream>
+	<fstream>
+	<iomanip>
+	"struct_type_project_1.h"
+
