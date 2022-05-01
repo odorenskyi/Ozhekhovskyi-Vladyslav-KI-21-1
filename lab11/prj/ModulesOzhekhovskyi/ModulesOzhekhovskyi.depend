@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1651222559 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesozhekhovskyi\main.cpp
+1651392223 source:c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesozhekhovskyi\main.cpp
 	"ModulesOzhekhovskyi.h"
 
-1651222604 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesozhekhovskyi\modulesozhekhovskyi.h
+1651392223 c:\users\vlado\desktop\cntu\¡Ã“œ\ozhekhovskyi-vladyslav-ki-21-1\lab11\prj\modulesozhekhovskyi\modulesozhekhovskyi.h
 	"struct_type_project_1.h"
 	<iostream>
 	<cstring>
